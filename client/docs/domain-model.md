@@ -1,25 +1,27 @@
-# domain-model
+# Domain Model
 
-예시:
+## VoteChoice (enum)
+- JJAJANG
+- JJAMPPONG
 
-## Candidate
-- id: number
-- name: string (2~20, not blank)
-- group: string (0~30, optional)
-- votes: number (>= 0)
-- createdAt: ISO-8601 string
+## Vote
+- **voteId**: UUID (string)
+- **choice**: enum VoteChoice (not null)
+- **createdAt**: ISO-8601 string
 
-## VoteLog
-- id: number
-- candidateId: number (FK → Candidate.id)
-- createdAt: ISO-8601 string
+## VoteResult (projection)
+- **total**: number (>= 0)
+- **counts**:
+  - JJAJANG: number (>= 0)
+  - JJAMPPONG: number (>= 0)
+- **updatedAt**: ISO-8601 string
 
-# 도메인 규칙
-투표 시:
-- Candidate.votes는 반드시 +1 증가
-- VoteLog는 항상 1건 생성
+## AbusePolicy (optional, 가산점)
+- **key**: string (IP / sessionId / deviceId 중 택1)
+- **windowSeconds**: number (예: 30)
+- **maxVotesPerWindow**: number (예: 1)
+- **blockedUntil**: ISO-8601 string (optional)
 
-rank는 저장하지 않고 조회 시 계산하는 것을 기본으로 한다.
-rank 계산 규칙:
-- votes desc
-- name asc
+## 검증 기준(명시):
+- `choice`는 반드시 enum 중 하나여야 함 (그 외 값 400)
+- 서버는 투표 저장 성공 후에만 카운트를 반영해야 함
