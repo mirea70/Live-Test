@@ -2,6 +2,10 @@ spring:
   application:
     name: foodvote
 
+server:
+  port: 8080
+
+
   datasource:
     # Default to H2 for simplicity in this demo, but can switch to MySQL
     url: jdbc:h2:mem:testdb;MODE=MySQL

@@ -1,0 +1,90 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.9)
+
+2025-12-31T12:14:27.593+09:00  INFO 7808 --- [test] [           main] com.live.test.TestApplication            : Starting TestApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 7808 (D:\Dev\projects\live-test\server\test\build\libs\test-0.0.1-SNAPSHOT.jar started by mirea70 in D:\Dev\projects\live-test\server)
+2025-12-31T12:14:27.595+09:00  INFO 7808 --- [test] [           main] com.live.test.TestApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-12-31T12:14:28.171+09:00  INFO 7808 --- [test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31T12:14:28.225+09:00  INFO 7808 --- [test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2025-12-31T12:14:28.703+09:00  INFO 7808 --- [test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-31T12:14:28.713+09:00  INFO 7808 --- [test] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-31T12:14:28.713+09:00  INFO 7808 --- [test] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-31T12:14:28.737+09:00  INFO 7808 --- [test] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-31T12:14:28.738+09:00  INFO 7808 --- [test] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1099 ms
+2025-12-31T12:14:28.829+09:00  INFO 7808 --- [test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-31T12:14:28.966+09:00  INFO 7808 --- [test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e233f32e-70d2-4d8e-95f2-b1edd86f84d5 user=SA
+2025-12-31T12:14:28.967+09:00  INFO 7808 --- [test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-31T12:14:28.996+09:00  INFO 7808 --- [test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31T12:14:29.029+09:00  INFO 7808 --- [test] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-31T12:14:29.051+09:00  INFO 7808 --- [test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-31T12:14:29.236+09:00  INFO 7808 --- [test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31T12:14:29.285+09:00  INFO 7808 --- [test] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31T12:14:29.779+09:00  INFO 7808 --- [test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31T12:14:29.800+09:00  INFO 7808 --- [test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31T12:14:29.998+09:00  INFO 7808 --- [test] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-31T12:14:30.352+09:00  WARN 7808 --- [test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31T12:14:30.609+09:00  INFO 7808 --- [test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-31T12:14:30.620+09:00  INFO 7808 --- [test] [           main] com.live.test.TestApplication            : Started TestApplication in 3.402 seconds (process running for 3.718)
+2025-12-31T12:14:38.494+09:00  INFO 7808 --- [test] [nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [(null);] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-12-31T12:14:38.498+09:00  INFO 7808 --- [test] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31T12:14:38.498+09:00  INFO 7808 --- [test] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-31T12:14:38.500+09:00  INFO 7808 --- [test] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.9)
+
+2025-12-31T12:16:15.301+09:00  INFO 2920 --- [test] [           main] com.live.test.TestApplication            : Starting TestApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 2920 (D:\Dev\projects\live-test\server\test\build\libs\test-0.0.1-SNAPSHOT.jar started by mirea70 in D:\Dev\projects\live-test\server)
+2025-12-31T12:16:15.304+09:00  INFO 2920 --- [test] [           main] com.live.test.TestApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-12-31T12:16:15.802+09:00  INFO 2920 --- [test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-31T12:16:15.846+09:00  INFO 2920 --- [test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-12-31T12:16:16.339+09:00  INFO 2920 --- [test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-31T12:16:16.350+09:00  INFO 2920 --- [test] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-31T12:16:16.351+09:00  INFO 2920 --- [test] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-31T12:16:16.376+09:00  INFO 2920 --- [test] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-31T12:16:16.377+09:00  INFO 2920 --- [test] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1038 ms
+2025-12-31T12:16:16.471+09:00  INFO 2920 --- [test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-31T12:16:16.627+09:00  INFO 2920 --- [test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a0452f8a-b4f9-4202-9d8d-fad22a1f67b2 user=SA
+2025-12-31T12:16:16.630+09:00  INFO 2920 --- [test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-31T12:16:16.670+09:00  INFO 2920 --- [test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-31T12:16:16.718+09:00  INFO 2920 --- [test] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-31T12:16:16.769+09:00  INFO 2920 --- [test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-31T12:16:17.009+09:00  INFO 2920 --- [test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-31T12:16:17.078+09:00  INFO 2920 --- [test] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-31T12:16:17.736+09:00  INFO 2920 --- [test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-31T12:16:17.764+09:00  INFO 2920 --- [test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-31T12:16:17.937+09:00  INFO 2920 --- [test] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-31T12:16:18.357+09:00  WARN 2920 --- [test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-31T12:16:18.644+09:00  INFO 2920 --- [test] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-31T12:16:18.657+09:00  INFO 2920 --- [test] [           main] com.live.test.TestApplication            : Started TestApplication in 3.753 seconds (process running for 4.114)
+2025-12-31T12:16:20.559+09:00  INFO 2920 --- [test] [nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [(null);] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-12-31T12:16:20.564+09:00  INFO 2920 --- [test] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31T12:16:20.565+09:00  INFO 2920 --- [test] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-31T12:16:20.565+09:00  INFO 2920 --- [test] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
